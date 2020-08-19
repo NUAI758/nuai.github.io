@@ -3,29 +3,49 @@
 <head>
     <style>
         .top {
-            padding: 5px 30px 50px 30px;
+            padding: 5px 10px 50px 10px;
             border-top: solid;
             border-bottom: solid;
         }
         .logo {
             float: left;
-            margin: 0px;
+            margin: 2px;
+            margin-left: 20px;
         }
         .menu {
-            float: right;
-            padding: 4px 8px 4px 8px;
-            margin: 4px;
+            padding: 5px 15px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            margin-right: 20px;
             border: 2px solid;
             border-radius: 14px;
         }
+        .menu p {
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            float: right;
+            display: inline-block;
+            transition: .2s;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        a:hover {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+        /* a:active {
+            color: black;
+        } */
     </style>
 </head>
 <body>
     <div class="top">
         <h1 class="logo">NUAI</h1>
-        <p class="menu">お問い合わせ</p>
-        <p class="menu">活動報告</p>
-        <p class="menu">NUAIとは</p>
+        <a><p class="menu">お問い合わせ</p></a>
+        <a><p class="menu">活動報告</p></a>
+        <a><p class="menu">NUAIとは</p></a>
     </div>
 
     <div class="middle">
