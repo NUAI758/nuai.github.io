@@ -53,3 +53,8 @@
 .top a:active {
     color: black;
 }
+.act {
+    padding: 25px;
+    margin: 30px;
+    border: 2px solid;
+}
