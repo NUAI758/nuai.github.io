@@ -1,1 +1,62 @@
 /* style.css */
+.start { /*オープニングアニメーション*/
+    text-align: center;
+    padding-top: 200px;
+    background:#ffffff;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+.start img {
+    vertical-align: middle;
+    display: none;  /*読み込み時に一瞬表示させるのを防ぐ*/
+    top: 0;
+    left: 0;
+    z-index: 6;
+    width: 500px;
+    height: 500px;
+}
+.top {
+    padding: 5px 10px 50px 10px;
+    border-top: solid;
+    border-bottom: solid;
+}
+.logo {
+    float: left;
+    margin: 2px;
+    margin-left: 20px;
+}
+.menu {
+    padding: 5px 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    border: 2px solid;
+    border-radius: 14px;
+}
+.menu p {
+    padding: 0;
+    margin: 0;
+}
+.right a {
+    float: right;
+    display: inline-block;
+    transition: .2s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.top a:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.top a:active {
+    color: black;
+}
+.middle p {
+    text-align: center;
+    font-size: 30px;
+}
+.middle {
+    margin-top: 200px;
+}
