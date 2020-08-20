@@ -53,10 +53,10 @@
 .top a:active {
     color: black;
 }
-.middle p {
-    text-align: center;
-    font-size: 30px;
+.middle p{
+    text-align: left;
+    font-size: large;
 }
 .middle {
-    margin-top: 200px;
+    margin-top: 0px;
 }
