@@ -2,8 +2,24 @@
 <html>
 <head>
     <style>
+        .start { /*オープニングアニメーション*/
+            text-align: center;
             padding-top: 200px;
+            background:#ffffff;
+            position: fixed;
+            height: 100%;
             width: 100%;
+            z-index: 5;
+        }
+        .start img {
+            vertical-align: middle;
+            display: none;  /*読み込み時に一瞬表示させるのを防ぐ*/
+            top: 0;
+            left: 0;
+            z-index: 6;
+            width: 500px;
+            height: 500px;
+        }
         .top {
             padding: 5px 10px 50px 10px;
             border-top: solid;
@@ -41,8 +57,24 @@
             color: black;
         }
     </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function() {
+            setTimeout(function(){
+                $('.start img').hide().fadeIn(2000);
+            },500); //0.5秒後にロゴをフェードイン!
+            setTimeout(function(){
+                $('.start').fadeOut(500);
+            },3000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+        });
+    </script>
 </head>
 <body>
+    <!-- opening animation -->
+    <div class="start">
+        <img src="images/logo.png">
+    </div>
+
     <div class="top">
         <h1 class="logo">NUAI</h1>
         <a><p class="menu">お問い合わせ</p></a>
