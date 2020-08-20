@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://nuai758.github.io/nuai.github.io/style.css">
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script>
-            $(function() {
-                setTimeout(function(){
-                    $('.start img').hide().fadeIn(2000);
-                },500); //0.5秒後にロゴをフェードイン!
-                setTimeout(function(){
-                    $('.start').fadeOut(500);
-                },3000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
-            });
-        </script>
-    </head>
+<head>
+    <link rel="stylesheet" href="https://nuai758.github.io/nuai.github.io/style.css">
+    <style>
+        .middle p {
+            text-align: center;
+            font-size: 30px;
+        }
+        .middle {
+            margin-top: 200px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function() {
+            setTimeout(function(){
+                $('.start img').hide().fadeIn(2000);
+            },500); //0.5秒後にロゴをフェードイン!
+            setTimeout(function(){
+                $('.start').fadeOut(500);
+            },3000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+        });
+    </script>
+</head>
 <body>
     <div class="top">
         <div class="left">
