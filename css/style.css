@@ -28,7 +28,7 @@ body{
 
 /*header共通*/
 header{
-    display: flex;
+    /* display: flex; */
     box-sizing: border-box;
     height: 80px;
     background-color: #fff;
