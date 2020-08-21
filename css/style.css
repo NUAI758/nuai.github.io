@@ -23,9 +23,10 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #222;
     background-color: #aaa;
+    
 }
 
-/*header*/
+/*header共通*/
 header{
     display: flex;
     box-sizing: border-box;
@@ -33,7 +34,7 @@ header{
     background-color: #fff;
     border-top:solid 2px #000;
     border-bottom:solid 2px #000;
-    margin: 0px;
+    margin: 10px 0px 30px 0px;
 }
 header h1{
     padding:0px;
@@ -68,17 +69,48 @@ header ul li a:hover{
     color: #aaa;
 }
 
-/*fotter*/
+/*fotter共通*/
 fotter p{
     text-align: center;
 }
-/*main*/
+
+/*main共通*/
 main{
     width: 1000px;
     margin: 100px auto;
 }
 
-/*index*/
+main .text-div{
+    width: 500px;
+    margin: 100px auto 100px auto;
+}
+
+main .text-div h2{
+    text-align: center;
+}
+
+main .text-short-div{
+    width: 500px;
+    margin: 100px auto 100px auto;
+}
+main .text-short-div h2{
+    text-align: center;
+}
+main .text-short-div p{
+    text-align: center;
+}
+
+main .ul-div{
+    width: 500px;
+    margin: 70px auto;
+}
+
+main .ul-div h2{
+    text-align: center;
+}
+
+
+/*index.html*/
 .index main{
     margin: 50px auto;
 }
@@ -86,7 +118,7 @@ main{
 .index main p{
     display: block;
     height: 666px;
-    background: url("images/index.jpg");
+    background: url("../images/index.jpg");
     background-repeat: no-repeat;
     font-size: 60px;
     text-align: center;
@@ -94,15 +126,43 @@ main{
     padding: 200px 0px 200px 0px;
 }
 
-/*about-nuai*/
+/*about-nuai.html*/
 .about-nuai header #about-nuai{
     text-decoration: underline;
 }
-/*activity*/
+
+/*activity.html*/
 .activity header #activity{
     text-decoration: underline;
 }
-/*contact*/
+
+.activity main #activity-report h2{
+    text-align:center;
+}
+.activity main .report{
+    width: 600px;
+    border-top: solid 1px #000;
+    margin: 0px auto;
+}
+.activity main .report:last-child{
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+.activity main .report h3{
+    text-align: center;
+}
+.activity main .report ul{
+    width:500px;
+    margin: 0px auto;
+}
+.activity main .report p{
+    width:500px;
+    margin: 0px auto;
+}
+
+
+
+/*contact.html*/
 .contact header #contact{
     text-decoration: underline;
 }
