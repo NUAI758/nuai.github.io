@@ -24,6 +24,7 @@
 }
 .logo {
     float: left;
+    width: 100px;
     margin: 2px;
     margin-left: 20px;
 }
