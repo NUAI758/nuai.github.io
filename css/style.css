@@ -39,9 +39,11 @@ header{
 header h1{
     padding:0px;
     margin: 10px auto 10px 30px;
+    width: 100%;
 }
 header h1 img{
     height: 100%;
+    width:auto;
 }
 header nav{
     margin: auto 10px 0px auto;
