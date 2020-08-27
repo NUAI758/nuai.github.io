@@ -92,6 +92,12 @@ main{
     margin: 100px auto;
 }
 
+main p{
+    width: 80%;
+    max-width:500px;
+    margin: 0px auto;
+}
+
 main .text-div{
     max-width:500px;
     width:80%;
@@ -104,7 +110,7 @@ main .text-div h2{
 main .text-short-div{
     max-width: 500px;
     width:80%;
-    margin: 100px auto 100px auto;
+    margin: 50px auto 50px auto;
 }
 main .text-short-div h2{
     text-align: center;
@@ -165,6 +171,7 @@ main .ul-div h2{
     border-top: solid 1px #fff;
     margin: 30px auto;
     background-color: #fff;
+    border-radius: 16px;
     color: #000;
 }
 
@@ -194,5 +201,10 @@ main .ul-div h2{
 /*contact.html*/
 .contact header #contact{
     text-decoration: underline;
+}
+
+.contact main #twitter{
+    height:400px;
+    overflow:scroll;
 }
 
